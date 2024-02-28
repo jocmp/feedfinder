@@ -3,7 +3,7 @@
 Find RSS feeds from a single URL.
 
 ```bash
-./gradlew run --args arstechnica.com
+./gradlew sample:run --args arstechnica.com
 ```
 
 Output

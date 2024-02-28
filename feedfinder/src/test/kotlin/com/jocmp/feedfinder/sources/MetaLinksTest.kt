@@ -1,13 +1,11 @@
 package com.jocmp.feedfinder.sources
 
-import com.jocmp.feedfinder.Request
 import com.jocmp.feedfinder.Response
 import com.jocmp.feedfinder.TestRequest
 import com.jocmp.feedfinder.testFile
 import com.jocmp.feedfinder.testResource
 import kotlinx.coroutines.runBlocking
 import org.junit.Test
-import java.io.File
 import java.net.URL
 import kotlin.test.assertEquals
 import kotlin.test.assertTrue

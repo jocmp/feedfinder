@@ -10,3 +10,4 @@ plugins {
 }
 
 rootProject.name = "feedfinder"
+include(":sample", ":feedfinder")

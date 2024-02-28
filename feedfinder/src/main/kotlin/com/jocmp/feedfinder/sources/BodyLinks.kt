@@ -4,7 +4,6 @@ import com.jocmp.feedfinder.DefaultRequest
 import com.jocmp.feedfinder.Request
 import com.jocmp.feedfinder.Response
 import com.jocmp.feedfinder.parser.Feed
-import com.jocmp.feedfinder.parser.Parser
 import com.jocmp.feedfinder.toParsedFeed
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
