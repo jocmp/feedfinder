@@ -1,5 +1,7 @@
 # FeedFinder.kt
 
+![CI](https://github.com/jocmp/feedfinder-kt/actions/workflows/ci.yml/badge.svg)
+
 Find RSS feeds from a single URL.
 
 ```bash
