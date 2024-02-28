@@ -1,5 +1,7 @@
 package com.jocmp.feedfinder
 
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 import java.net.HttpURLConnection
 import java.net.URL
 
@@ -7,7 +9,9 @@ import java.net.URL
 internal class DefaultRequest: Request {
     override suspend fun fetch(url: URL): Response {
         val parsedURL = URL("https", url.host, url.port, url.file)
-        val connection = parsedURL.openConnection() as HttpURLConnection
+        val connection = withContext(Dispatchers.IO) {
+            parsedURL.openConnection()
+        }
         connection.setRequestProperty("User-Agent", USER_AGENT)
 
         val body = connection.inputStream.bufferedReader().readText()
